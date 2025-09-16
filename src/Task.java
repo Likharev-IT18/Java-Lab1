@@ -93,7 +93,7 @@ public class Task {
             case "суббота":
                 System.out.println("  суббота");
             case "воскресенье":
-                System.out.println("воскресенье");
+                System.out.println("  воскресенье");
                 break;
             default:
                 System.out.println("Это не день недели...");
@@ -193,7 +193,6 @@ public class Task {
         return newArray;
     }
     //6
-    // Метод переворачивания массива
     public void reverse(int[] arr) {
         int left = 0;
         int right = arr.length - 1;
@@ -204,7 +203,6 @@ public class Task {
             arr[left] = arr[right];
             arr[right] = temp;
 
-            //Перемещаемся ближе к центру
             left++;
             right--;
         }
