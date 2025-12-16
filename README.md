@@ -188,7 +188,8 @@ Task.java - решение заданий.
   * Иначе выводит "Вы не угадали число, введите число от 0 до 9:"  
   * Переходит в начало цикла.  
     Пример:  
-    <img width="501" height="210" alt="image" src="https://github.com/user-attachments/assets/d57bd74d-8501-4abd-b015-c34936e4e08f" />  
+    <img width="501" height="210" alt="1" src="https://github.com/user-attachments/assets/9efd684f-c0ae-4fe0-a140-20c1525ddfc8" />
+
 
 Массивы:  
 * **public int findLast(int[] arr, int x);**  
@@ -201,8 +202,8 @@ Task.java - решение заданий.
   * Идет с начала цикла, таким образом находя индекс последнего элемента.  
   * Возвращает index. Если элементов равных x нет в массиве, вернется -1.  
     Пример:  
-1.<img width="206" height="80" alt="image" src="https://github.com/user-attachments/assets/75831d12-a00f-4951-876d-be5d66c2818a" />  
-2.<img width="199" height="81" alt="image" src="https://github.com/user-attachments/assets/5350ab65-397f-451f-b3c6-03a38e436e82" />  
+1.<img width="206" height="80" alt="2" src="https://github.com/user-attachments/assets/a0deaa2d-5784-45c5-b436-f1d5ebb2801f" />  
+2.<img width="199" height="81" alt="3" src="https://github.com/user-attachments/assets/5d26e447-beb5-41a2-a0aa-4d89ee79d6c2" />  
 
 * **public int[] add(int[] arr, int x, int pos);**  
   Добавляет элемент x в позицию pos и возвращает новый массив.  
@@ -215,8 +216,8 @@ Task.java - решение заданий.
   * Идет по циклу пока i меньше размера нового массива.  
   * Возвращает новый массива newArray.  
     Пример:  
-1.<img width="264" height="107" alt="image" src="https://github.com/user-attachments/assets/9c5e0cc3-a875-4df3-819f-63d0d64aec75" />  
-2.<img width="272" height="108" alt="image" src="https://github.com/user-attachments/assets/aa1e3d96-1794-4af2-8908-0acd4e8e052b" />  
+1.<img width="264" height="107" alt="4" src="https://github.com/user-attachments/assets/04e1683f-7c9c-45c4-b9da-a29b51758fed" />  
+2.<img width="272" height="108" alt="5" src="https://github.com/user-attachments/assets/d31a7ad5-a5f6-448d-9ff8-619e3f7b15e7" />  
 
 * **public void reverse(int[] arr);**  
   Проходит с правого и левого края, изменяя элементы. Переворачивает массив.  
@@ -228,8 +229,8 @@ Task.java - решение заданий.
   * Добавляет к левому индексу 1, из правого вычитает 1  
   * Идет по циклу сначала.  
   Пример:  
-1.<img width="271" height="58" alt="image" src="https://github.com/user-attachments/assets/7c5df0de-3078-4a15-92d9-4c891859404b" />  
-2.<img width="283" height="58" alt="image" src="https://github.com/user-attachments/assets/405e74cc-8624-4065-9df5-f3a6b700a780" />  
+1.<img width="271" height="58" alt="6" src="https://github.com/user-attachments/assets/ff9ecb78-3452-4c9d-8633-ebe57179e45b" />  
+2.<img width="283" height="58" alt="7" src="https://github.com/user-attachments/assets/c4d796d2-bb9b-4195-b765-654797f77a2a" />  
 
 * **public int[] concat(int[] arr1, int[] arr2);**  
   Возвращает новый массив, объединение двух массивов arr1 и arr2.  
@@ -242,8 +243,8 @@ Task.java - решение заданий.
   * Перебирает циклом for второй массив от i=0 до i<arr2.length с шагом 1. Записывает элементы из arr2[i] в новый массив newArray[index] и увеличивает index на 1.  
   * Возвращает новый массив newArray.  
   Пример:  
-1.<img width="304" height="92" alt="image" src="https://github.com/user-attachments/assets/2a6216fb-3494-4545-9482-8ae1cc62122f" />  
-2.<img width="371" height="78" alt="image" src="https://github.com/user-attachments/assets/b89212cb-942f-484b-8923-77abbdf135ff" />  
+1.<img width="304" height="92" alt="8" src="https://github.com/user-attachments/assets/5d34fd46-6142-4833-9ac0-f58942de41f2" />  
+2.<img width="371" height="78" alt="9" src="https://github.com/user-attachments/assets/0022b75b-13ef-4c4c-a7a6-9fb532662d46" />  
 
 
 * **public int[] deleteNegative(int[] arr);**  
@@ -257,6 +258,6 @@ Task.java - решение заданий.
   * Если элемент arr[i] больше нуля, добавляет элемент из массива arr[i] в новый массив newArray[i]. Увеличивает индекс вспомогательной переменной для индекса нового массива i1 на 1.  
   * Возвращает новый массив newArray.  
   Пример:  
-1.<img width="218" height="56" alt="image" src="https://github.com/user-attachments/assets/1dc54cd3-9287-4762-bb50-ed68037fc469" />  
-2.<img width="368" height="55" alt="image" src="https://github.com/user-attachments/assets/412ad0f7-40b4-4a4d-9430-a91edd65e26b" />  
+1.<img width="218" height="56" alt="10" src="https://github.com/user-attachments/assets/12cf39ae-9f67-415f-8423-c80bc4fec926" />  
+2.<img width="368" height="55" alt="11" src="https://github.com/user-attachments/assets/dd1e0b36-8202-4353-8615-2a0964bfad20" />  
 
