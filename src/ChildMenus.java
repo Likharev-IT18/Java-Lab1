@@ -4,10 +4,9 @@ import java.util.Scanner;
 public class ChildMenus {
     public void methods() {
         Scanner scanner = new Scanner(System.in);
-        Task task = new Task(); //Подключаем решения заданий
+        Task task = new Task();
         int taskNum = 1;
 
-        //Переменные
         int xInt;
         int aInt;
         int bInt;
@@ -29,8 +28,8 @@ public class ChildMenus {
                                   "менее двух. Подсказки:\n" +
                                     "int x=123%10; // х будет иметь значение 3\n" +
                                       "int у=123/10; // у будет иметь значение 12\nПример: x=4568\nРезультат: 14\n\nВведите x:");
-                    xInt = scanner.nextInt(); //просим x
-                    xInt = task.sumLastNums(xInt); //вычисляем сумму
+                    xInt = scanner.nextInt();
+                    xInt = task.sumLastNums(xInt);
                     if (xInt != -1) {
                         System.out.println("Сумма: " + xInt);
                     } else {
@@ -112,10 +111,9 @@ public class ChildMenus {
 
     public void conditions() {
         Scanner scanner = new Scanner(System.in);
-        Task task = new Task(); //Подключаем решения заданий
+        Task task = new Task();
         int taskNum = 1;
 
-        //Переменные
         int xInt;
         int yInt;
         int zInt;
@@ -217,10 +215,9 @@ public class ChildMenus {
 
     public void cycles() {
         Scanner scanner = new Scanner(System.in);
-        Task task = new Task(); //Подключаем решения заданий
+        Task task = new Task();
         int taskNum = 1;
 
-        //Переменные
         int xInt;
         int yInt;
         String xStr;
@@ -308,10 +305,9 @@ public class ChildMenus {
 
     public void arrays() {
         Scanner scanner = new Scanner(System.in);
-        Task task = new Task(); //Подключаем решения заданий
+        Task task = new Task();
         int taskNum = 1;
 
-        //Переменные
         int xInt;
         int pos;
         int[] array;
@@ -375,8 +371,8 @@ public class ChildMenus {
                                 "массив, в котором сначала идут элементы первого массива (arr1), а затем\n" +
                                   "второго (arr2).\n");
                     arr1 = task.createArray();
-                    System.out.println("arr1=" + task.arrayGetString(arr1));
                     arr2 = task.createArray();
+                    System.out.println("arr1=" + task.arrayGetString(arr1));
                     System.out.println("arr2=" + task.arrayGetString(arr2));
                     array = task.concat(arr1, arr2);
                     System.out.println("Результат: " + task.arrayGetString(array));

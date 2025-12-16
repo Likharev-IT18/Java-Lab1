@@ -7,20 +7,20 @@ public class Task {
     //2
     public int sumLastNums(int x) {
         if (x / 10 == 0){
-            return -1; // если меньше двух знаков
+            return -1;
         }
-        int one = (x%100)/10; //находим второе число справа
-        int two = x%10; //находим первое число справа
+        int one = (x%100)/10;
+        int two = x%10;
         return Math.abs(one + two);
     }
     //4
     public boolean isPositive(int x) {
-        return x > 0; //возвращаяем true если x>0
+        return x > 0;
     }
     //6
     public boolean isUpperCase(char x) {
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //алфавит
-        for (int i = 0; i < alphabet.length(); i++) { //перебираем алфавит и сравниваем
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for (int i = 0; i < alphabet.length(); i++) {
            if (alphabet.charAt(i) == x) {
                return true;
            }
@@ -29,12 +29,7 @@ public class Task {
     }
     //8
     public boolean isDivisor(int a, int b) {
-        if (a<b) { // меняем переменные чтобы "a" была больше "b"
-            int c = a;
-            a = b;
-            b = c;
-        }
-        return a % b == 0;
+        return (a % b == 0) || (b % a == 0);
     }
     //10
     public int lastNumSum(int a, int b) {
@@ -44,7 +39,7 @@ public class Task {
     //Условия
     //2
     public double safeDiv(int x, int y) {
-        if (y==0) { // проверяем чтобы "y" не был 0
+        if (y==0) {
             return 0;
         }
         return (double)x/y;
@@ -52,7 +47,6 @@ public class Task {
     //4
     public String makeDecision(int x, int y) {
         String str;
-        //Записываем в строку x,y и подходящий знак
         if (x>y) {
             str = x + ">" + y;
         } else if (x<y) {
@@ -68,7 +62,6 @@ public class Task {
     }
     //8
     public String age(int x) {
-        String str;
         if (x % 10 == 1 && x != 11){
             return x+" год";
         } else if ((x%10==2 || x%10==3 || x%10==4) && (x!=12 && x!=13 && x!=14)) {
@@ -153,11 +146,12 @@ public class Task {
 
         while (!success) {
             enterNumber = scanner.nextInt();
-            if (enterNumber < 0 || enterNumber > 9) { // проверяем чтобы число было от 0 до 9
+            if (enterNumber < 0 || enterNumber > 9) {
                 System.out.println("Число может быть от 0 до 9");
+                System.out.print("Введите число от 0 до 9: ");
                 continue;
             }
-            attempts++; //тратим попытку
+            attempts++;
             if (enterNumber == randomNumber) {
                 System.out.println("Вы угадали число за " + attempts + " попыток!");
                 success = true;
@@ -198,7 +192,6 @@ public class Task {
         int right = arr.length - 1;
 
         while (left < right) {
-            //Меняем местами
             int temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp;
@@ -241,7 +234,6 @@ public class Task {
         return newArray;
     }
 
-    //Создание массива
     public int[] createArray() {
         Scanner scanner = new Scanner(System.in);
         int size = 1;
@@ -254,7 +246,7 @@ public class Task {
         } while (size < 1);
         int[] arr = new int[size];
 
-        for(int i = 0; i < size; i++) { //заполняем массив
+        for(int i = 0; i < size; i++) {
             System.out.print("Введите элемент " + (i+1) + ":");
             arr[i] = scanner.nextInt();
         }
